@@ -4,7 +4,7 @@ import java.util.List;
 public class Snacks {
     private static final List<Snack> snacks;
 
-    //Bloque de tipo statico inicializador
+    //Bloque de tipo static inicializador
     static {
         snacks = new ArrayList<>();
         snacks.add(new Snack("Refresco", 55.88));

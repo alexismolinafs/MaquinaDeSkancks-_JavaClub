@@ -2,18 +2,18 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 
-public class Snack  implements Serializable {
+public class Snack implements Serializable {
     private static Integer contadorSnacks = 0;
     private Integer idSnack = 0;
     private String nombre;
-    private  Double precio;
+    private Double precio;
 
-    public Snack(){
+    public Snack() {
         this.idSnack = ++Snack.contadorSnacks;
     }
 
-    public Snack(String nombre, Double precio){
-        //Se manda a traer el constructor vacío para no repetir comodo
+    public Snack(String nombre, Double precio) {
+        //Se manda a traer el constructor vacío para no repetir
         this(); //Debe ser el primero en la línea del constructor
         this.nombre = nombre;
         this.precio = precio;
@@ -47,8 +47,8 @@ public class Snack  implements Serializable {
     @Override
     public String toString() {
         return "Snack: " +
-                "Id Snack: " + "("+idSnack+")"  +
-                " Nombre: " + nombre  + " -"+
+                "Id Snack: " + "(" + idSnack + ")" +
+                " Nombre: " + nombre + " -" +
                 " Precio: $" + precio;
     }
 
